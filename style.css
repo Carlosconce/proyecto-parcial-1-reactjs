@@ -1,0 +1,35 @@
+/* Reset básico para evitar problemas de especificidad */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #595978; /* Morado oscuro */
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    justify-items: center;
+}
+
+.pill {
+    width: 6rem;
+    height: 10rem;
+    background-color: #e6d18f; /* Beige claro */
+    border-radius: 999px; /* Forma tipo cápsula */
+}
